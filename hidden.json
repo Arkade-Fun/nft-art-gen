@@ -1,0 +1,5 @@
+{
+  "name": "My hidden image",
+  "description": "Hidden description",
+  "image": "ipfs://CID/hidden.png"
+}
