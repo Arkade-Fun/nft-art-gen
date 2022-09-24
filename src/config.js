@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "";
-const description = "";
+const namePrefix = "Looney Bulls";
+const description = "That's all bulls!";
 const baseUri = "ipfs://uri";
 
 const solanaMetadata = {
@@ -21,16 +21,131 @@ const solanaMetadata = {
   ],
 };
 
-// If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 125,
     layersOrder: [
       { name: "Background" },
-      { name: "Body" },
+      { name: "Shadow" },
+      {
+        name: "Hands On Side",
+        options: {
+          displayName: "Body",
+        },
+      },
+      {
+        name: "Hands On Side Outfit",
+        options: {
+          displayName: "Outfit",
+        },
+      },
       { name: "Eyes" },
-      { name: "Hats" },
+      { name: "Mouth" },
+      { name: "Head" },
+      { name: "Overlay" },
     ],
+  },
+  {
+    growEditionSizeTo: 200,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shadow" },
+      {
+        name: "Arms Crossed",
+        options: {
+          displayName: "Body",
+        },
+      },
+      {
+        name: "Arms Crossed Outfit",
+        options: {
+          displayName: "Outfit",
+        },
+      },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Head" },
+      { name: "Overlay" },
+    ],
+  },
+  {
+    growEditionSizeTo: 250,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shadow" },
+      {
+        name: "Hands Up",
+        options: {
+          displayName: "Body",
+        },
+      },
+      {
+        name: "Hands Up Outfit",
+        options: {
+          displayName: "Outfit",
+        },
+      },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Head" },
+      { name: "Overlay" },
+    ],
+  },
+  {
+    growEditionSizeTo: 310,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shadow" },
+      {
+        name: "Running",
+        options: {
+          displayName: "Body",
+        },
+      },
+      {
+        name: "Running Outfit",
+        options: {
+          displayName: "Outfit",
+        },
+      },
+      {
+        name: "Running Accessory",
+        options: {
+          displayName: "Item",
+        },
+      },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Head" },
+      { name: "Overlay" },
+    ],
+  },
+  {
+    growEditionSizeTo: 334,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Shadow" },
+      {
+        name: "Tip Toe",
+        options: {
+          displayName: "Body",
+        },
+      },
+      {
+        name: "Tip Toe Outfit",
+        options: {
+          displayName: "Outfit",
+        },
+      },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Head" },
+      { name: "Overlay" },
+    ],
+  },
+  {
+    growEditionSizeTo: 340,
+    layersOrder: [{ name: "Special Edition" }],
   },
 ];
 

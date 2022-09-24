@@ -45,7 +45,7 @@ layerConfigurations.forEach((config) => {
 
 // fill up rarity chart with occurrences from metadata
 data.forEach((element) => {
-  let attributes = element.item.attributes;
+  let attributes = element.attributes;
   attributes.forEach((attribute) => {
     let traitType = attribute.trait_type;
     let value = attribute.value;

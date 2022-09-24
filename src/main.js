@@ -281,9 +281,7 @@ const writeMetaData = (_data) => {
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
-  let metadata = metadataList.find(
-    (meta) => meta.item.edition == _editionCount
-  );
+  let metadata = metadataList.find((meta) => meta.edition == _editionCount);
   debugLogs
     ? console.log(
         `Writing metadata for ${_editionCount}: ${JSON.stringify(metadata)}`
