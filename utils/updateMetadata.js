@@ -1,8 +1,9 @@
-const { pseudoRandomBytes } = require("crypto");
 const fs = require("fs");
+const basePath = process.cwd();
+const sha1 = require(`${basePath}/node_modules/sha1`);
 
 const moveFiles = (oldPath, newPath) => {
-  for (let i = 1000; i < 10101; i += 1) {
+  for (let i = 1; i < 62; i += 1) {
     const oldFile = `${oldPath + i}.json`;
     const newFile = `${newPath + i}.json`;
 
@@ -14,15 +15,19 @@ const moveFiles = (oldPath, newPath) => {
 
 const removeNoneAttribute = () => {
   for (let i = 0; i < 3400; i += 1) {
-    const fileName = `${i}.json`;
-    const path = "build/json/";
-    const fullPath = path + fileName;
-    const data = JSON.parse(fs.readFileSync(fullPath));
-    const { attributes } = data;
+    try {
+      const fileName = `${i}.json`;
+      const path = "build/json/";
+      const fullPath = path + fileName;
+      const data = JSON.parse(fs.readFileSync(fullPath));
+      const { attributes } = data;
 
-    const newAttributes = attributes.filter((atr) => atr.value !== "None");
-    data.attributes = newAttributes;
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));
+      const newAttributes = attributes.filter((atr) => atr.value !== "None");
+      data.attributes = newAttributes;
+      fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));
+    } catch (err) {
+      console.log(`Error with ${i}`, err);
+    }
   }
 };
 
@@ -193,6 +198,38 @@ const createCombinedMetadata = () => {
   );
 };
 
+const checkDupes = async () => {
+  const HashList = {};
+  const dir = "build/json/";
+  try {
+    const files = await fs.readdirSync(dir);
+    // files object contains all files names
+    // log them on console
+    files.forEach((file) => {
+      try {
+        let atrStr = "";
+        const data = JSON.parse(fs.readFileSync(`${dir}${file}`));
+        const { attributes } = data;
+        // console.log("attributes =>", attributes);
+        attributes.forEach((attr) => {
+          atrStr += attr.trait_type + attr.value;
+        });
+        let hash = sha1(atrStr);
+        if (HashList[hash]) {
+          console.warn(`${file} is duplicate`);
+        }
+        HashList[hash] = true;
+      } catch (err) {
+        console.log(`Error with file ${file}`, err);
+      }
+    });
+
+    // console.log("HashList =>", HashList);
+  } catch (err) {
+    console.log("err =>", err);
+  }
+};
+
 // moveFiles('build/images/', 'build/json/');
 // moveFiles('build/json/', 'build/images/');
 // removeNoneAttribute();
@@ -203,3 +240,4 @@ const createCombinedMetadata = () => {
 // renumberFiles();
 // rekeyUploadedJSON();
 // createCombinedMetadata();
+checkDupes();
