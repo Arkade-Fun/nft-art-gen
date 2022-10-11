@@ -1,8 +1,8 @@
 {
-  "name": "Kujira Hero #27",
+  "name": "Kujira Hero #12",
   "description": "Alone you can go fast but together we can go far!",
   "external_url": "",
-  "image": "27.png",
+  "image": "12.png",
   "attributes": [
     {
       "trait_type": "Gender",
@@ -18,24 +18,28 @@
     },
     {
       "trait_type": "Head",
-      "value": "Hair with Sunnies"
+      "value": "Ichigura"
     },
     {
       "trait_type": "Body",
-      "value": "Kujira Blue Shirt"
+      "value": "Ichigura"
     },
     {
       "trait_type": "Legs",
-      "value": "Black Shorts"
-    }    
+      "value": "Ichigura"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Dakong Sundang"
+    }
   ],
   "properties": {
     "files": [
       {
-        "uri": "27.png",
+        "uri": "12.png",
         "type": "image/png"
       }
     ],
     "creators": []
-  },
+  }
 }
