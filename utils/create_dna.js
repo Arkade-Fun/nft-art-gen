@@ -45,7 +45,7 @@ const getElements = (path) => {
 
 const layersSetup = (layersOrder) => {
   const layers = layersOrder.map((layerObj, index) => ({
-    id: index + 62,
+    id: index,
     elements: getElements(`${layersDir}/${layerObj.name.replace("-", " ")}/`),
     name:
       layerObj.options?.["displayName"] != undefined
@@ -103,6 +103,10 @@ const createDna = (_layers) => {
   console.log("_layers:", _layers.length);
   console.log("dna", sha1(randNum.join("-")));
   return sha1(randNum.join("-"));
+};
+
+module.exports = {
+  create,
 };
 
 create();

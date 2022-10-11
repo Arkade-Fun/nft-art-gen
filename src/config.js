@@ -2,6 +2,9 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
+var seedrandom = require("seedrandom");
+seedrandom("Your seed here", { global: true });
+
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
