@@ -1,0 +1,41 @@
+{
+  "name": "Kujira Hero #28",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "28.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Jolyra"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Jolyra"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Jolyra"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "28.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

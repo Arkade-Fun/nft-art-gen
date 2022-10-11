@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #33",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "33.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Kurama Chakra Mode"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Nine Tails"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Ninja"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Nine Tails"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Nine Tails"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "33.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

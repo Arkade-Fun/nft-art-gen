@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #35",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "35.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira XL"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Old Boy Beard"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Samurai"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Double Stick"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Ichigura"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Dakung Sundang"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "35.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

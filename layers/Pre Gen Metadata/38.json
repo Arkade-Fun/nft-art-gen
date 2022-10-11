@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #38",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "38.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Samurai Girl Sakkat"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Red Kimono"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Dual Night Blades"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Samurai Girl Legs"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "38.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

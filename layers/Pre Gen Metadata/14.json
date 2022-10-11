@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #14",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "14.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Spawnira"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Spawnira"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Spawnira"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Spawnira"
+    },
+    {
+      "trait_type": "Forces",
+      "value": "Itachi Crows"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "14.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

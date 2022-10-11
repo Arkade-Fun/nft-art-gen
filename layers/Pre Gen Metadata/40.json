@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #40",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "40.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira Samus"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Kujira Headband"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Samus"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Samus"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Samus"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "40.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

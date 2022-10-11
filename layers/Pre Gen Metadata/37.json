@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #37",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "37.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Raiden Steel Mask Off"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Raiden Steel Body"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Raiden Steel Sword"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Raiden Steel Legs"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "37.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

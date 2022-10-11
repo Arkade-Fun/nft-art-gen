@@ -1,0 +1,37 @@
+{
+  "name": "Kujira Hero #1",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "1.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Base",
+      "value": "Whale Rider"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Kujira Astro"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Naked Whale Rider"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "1.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

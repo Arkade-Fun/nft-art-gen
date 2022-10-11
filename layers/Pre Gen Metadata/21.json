@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #21",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "21.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Wise Wizard"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Kujira Wizard"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Kujira Wizard"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Fire Staff"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "21.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

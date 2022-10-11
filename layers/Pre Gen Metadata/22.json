@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #22",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "22.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Kujira Steel"
+    },
+    {
+      "trait_type": "Head",
+      "value": "USK Cap"
+    },
+    {
+      "trait_type": "Body",
+      "value": "USK Necklace"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Dove Wings"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Kujira Guitar"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "22.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

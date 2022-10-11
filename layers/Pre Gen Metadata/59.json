@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #59",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "59.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Grandmaster Kujirasan"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Grandmaster Kujirasan Robe"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Dark Gambit"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Grandmaster Kujirasan Robe"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Fire Dual Saber Staffs"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "59.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

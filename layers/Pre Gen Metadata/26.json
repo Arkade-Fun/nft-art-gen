@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #26",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "26.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Golden Crowned Bull"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Kujiseiya with Robe"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Kujiseiya"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Left King Slayer"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "26.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

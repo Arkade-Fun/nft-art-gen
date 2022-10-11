@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #48",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "48.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Fin Headband"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Top Fire Dragon"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Tnut"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Anchor"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "48.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

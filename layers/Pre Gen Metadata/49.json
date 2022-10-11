@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #49",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "49.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Unburnt"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Skin Head and Moustache"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Blue Hero Jersey"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Blue Shorts and Shoes"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Basketball"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "49.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

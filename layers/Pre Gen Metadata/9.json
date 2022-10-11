@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #9",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "9.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Higabanaji"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Higabanaji"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Higabanaji"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Long Black Hair"
+    },
+    {
+      "trait_type": "Forces",
+      "value": "Baraha"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "9.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #54",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "54.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Tsubasa"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Tsubasa Shirt"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Tsubasa Legs Set"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Soccer Ball"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "54.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

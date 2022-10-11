@@ -1,0 +1,41 @@
+{
+  "name": "Kujira Hero #42",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "42.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Sinonji"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Sinonji"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Sinonji"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "42.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

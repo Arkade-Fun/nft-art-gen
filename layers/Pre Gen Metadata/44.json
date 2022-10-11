@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #44",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "44.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Kujira Cap"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Kujira Shirt"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Gary Vee"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Bass Guitar"
+    },
+    {
+      "trait_type": "Forces",
+      "value": "Golden Retriever with Kuji Cap"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "44.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

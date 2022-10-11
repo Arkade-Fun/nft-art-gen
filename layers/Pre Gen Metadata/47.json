@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #47",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "47.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "God Tier"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Royal Thorideon"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Royal Thorideon"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Royal Thorideon"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Twin Blade and Gauntlet"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "47.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

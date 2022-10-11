@@ -88,8 +88,8 @@ const getElements = (path) => {
 
 const layersSetup = (layersOrder) => {
   const layers = layersOrder.map((layerObj, index) => ({
-    id: index,
-    elements: getElements(`${layersDir}/${layerObj.name}/`),
+    id: index + 62,
+    elements: getElements(`${layersDir}/${layerObj.name.replace("-", " ")}/`),
     name:
       layerObj.options?.["displayName"] != undefined
         ? layerObj.options?.["displayName"]

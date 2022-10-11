@@ -1,0 +1,41 @@
+{
+  "name": "Kujira Hero #52",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "52.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Jotaro Kuji"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Jotaro Kuji"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Jotaro Kuji"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "52.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

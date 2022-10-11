@@ -1,0 +1,41 @@
+{
+  "name": "Kujira Hero #34",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "34.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Mecha Bull"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Mecha Bull"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Mecha Bull"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "34.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

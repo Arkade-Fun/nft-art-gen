@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #11",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "11.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Achilles"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Achilles"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Achilles Spear and Shield"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Achilles"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "11.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

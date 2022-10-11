@@ -1,0 +1,45 @@
+{
+  "name": "Kujira Hero #30",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "30.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Blue Whale Headgear"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Kujira Life Vest"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Content Cat"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Monkey and Panda Buddies"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "30.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}

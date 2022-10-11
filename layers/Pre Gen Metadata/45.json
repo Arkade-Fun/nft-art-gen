@@ -1,0 +1,49 @@
+{
+  "name": "Kujira Hero #45",
+  "description": "Alone you can go fast but together we can go far!",
+  "external_url": "",
+  "image": "45.png",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Background",
+      "value": "Kujira"
+    },
+    {
+      "trait_type": "Bot",
+      "value": "Full Metal"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Hibachi Chef"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Hibachi Chef"
+    },
+    {
+      "trait_type": "Legs",
+      "value": "Hibachi Chef"
+    },
+    {
+      "trait_type": "Hands",
+      "value": "Hibachi Chef"
+    },
+    {
+      "trait_type": "Body Items",
+      "value": "Kujira Fan"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "45.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": []
+  }
+}
