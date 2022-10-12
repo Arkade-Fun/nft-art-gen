@@ -209,8 +209,9 @@ const checkDupes = async () => {
       try {
         let atrStr = "";
         const data = JSON.parse(fs.readFileSync(`${dir}${file}`));
-        const { attributes } = data;
+        let { attributes } = data;
         // console.log("attributes =>", attributes);
+        attributes = attributes.sort((a, b) => a.trait_type - b.trait_type);
         attributes.forEach((attr) => {
           atrStr += attr.trait_type + attr.value;
         });
