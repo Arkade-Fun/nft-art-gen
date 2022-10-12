@@ -3,9 +3,9 @@ const basePath = process.cwd();
 const sha1 = require(`${basePath}/node_modules/sha1`);
 
 const moveFiles = (oldPath, newPath) => {
-  for (let i = 1; i < 62; i += 1) {
-    const oldFile = `${oldPath + i}.json`;
-    const newFile = `${newPath + i}.json`;
+  for (let i = 1; i <= 62; i += 1) {
+    const oldFile = `${oldPath + i}.png`;
+    const newFile = `${newPath + i}.png`;
 
     fs.rename(oldFile, newFile, (err) => {
       if (err) throw err;
