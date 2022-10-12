@@ -14,10 +14,10 @@ const moveFiles = (oldPath, newPath, fileType) => {
 };
 
 const removeNoneAttribute = () => {
-  for (let i = 0; i < 3400; i += 1) {
+  for (let i = 1; i < 3333; i += 1) {
     try {
       const fileName = `${i}.json`;
-      const path = "build/json/";
+      const path = `${basePath}/build/json/`;
       const fullPath = path + fileName;
       const data = JSON.parse(fs.readFileSync(fullPath));
       const { attributes } = data;
@@ -140,7 +140,7 @@ const renumberFiles = () => {
 const prepareUploadFiles = () => {
   const index = 0;
   const dest = "build/upload0/";
-  const oldJsonPath = "build/json/";
+  const oldJsonPath = `${basePath}/build/json/`;
   const oldImgPath = "build/images/";
   const inc = 1000 * index;
   for (let i = 0; i < 1000; i++) {
@@ -200,17 +200,19 @@ const createCombinedMetadata = () => {
 
 const checkDupes = async () => {
   const HashList = {};
-  const dir = "build/json/";
+  const dir = `${basePath}/build/json/`;
   try {
-    const files = await fs.readdirSync(dir);
+    const files = await fs.readdirSync(dir).splice(0, 3333);
     // files object contains all files names
     // log them on console
     files.forEach((file) => {
+      // if ()
       try {
         let atrStr = "";
         const data = JSON.parse(fs.readFileSync(`${dir}${file}`));
+
         let { attributes } = data;
-        // console.log("attributes =>", attributes);
+        // console.log("attributes =>", data.edition, attributes.length);
         attributes = attributes.sort((a, b) => a.trait_type - b.trait_type);
         attributes.forEach((attr) => {
           atrStr += attr.trait_type + attr.value;
@@ -232,7 +234,7 @@ const checkDupes = async () => {
 };
 
 moveFiles("Pre Gen Images/", "build/images/", "png");
-moveFiles("Pre Gen Metadata/", "build/json/", "json");
+moveFiles("Pre Gen Metadata/", `${basePath}/build/json/`, "json");
 removeNoneAttribute();
 // addCollectionsField();
 // updateRoyalities();
