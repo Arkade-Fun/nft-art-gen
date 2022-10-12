@@ -2,10 +2,10 @@ const fs = require("fs");
 const basePath = process.cwd();
 const sha1 = require(`${basePath}/node_modules/sha1`);
 
-const moveFiles = (oldPath, newPath) => {
+const moveFiles = (oldPath, newPath, fileType) => {
   for (let i = 1; i <= 62; i += 1) {
-    const oldFile = `${oldPath + i}.json`;
-    const newFile = `${newPath + i}.json`;
+    const oldFile = `${oldPath + i}.${fileType}`;
+    const newFile = `${newPath + i}.${fileType}`;
 
     fs.copyFile(oldFile, newFile, (err) => {
       if (err) throw err;
@@ -231,9 +231,9 @@ const checkDupes = async () => {
   }
 };
 
-// moveFiles('Pre Gen Images/', 'build/images/');
-moveFiles("Pre Gen Metadata/", "build/json/");
-// removeNoneAttribute();
+moveFiles("Pre Gen Images/", "build/images/", "png");
+moveFiles("Pre Gen Metadata/", "build/json/", "json");
+removeNoneAttribute();
 // addCollectionsField();
 // updateRoyalities();
 // updateMagicEdenRoyalities();
