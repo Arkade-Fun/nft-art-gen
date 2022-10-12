@@ -13,6 +13,38 @@ const moveFiles = (oldPath, newPath, fileType) => {
   }
 };
 
+const insertOneToOnes = () => {
+  const Map = {};
+
+  for (let i = 1; i <= 62; i++) {
+    try {
+      let rand = Math.ceil(Math.random() * 3333);
+      console.log("rand =>", rand);
+      if (Map[rand]) {
+        console.log("error: repeated 1:1", i);
+        i--;
+      } else {
+        //insert image
+        let oldImg = `${"Pre Gen Images/" + i}.png`;
+        let newImg = `${"build/images/" + rand}.png`;
+        fs.copyFile(oldImg, newImg, (err) => {
+          if (err) throw err;
+        });
+        //insert json
+        let oldFile = `${"Pre Gen Metadata/" + i}.json`;
+        let newFile = `${`build/json/` + rand}.json`;
+        fs.copyFile(oldFile, newFile, (err) => {
+          if (err) throw err;
+        });
+        Map[rand] = true;
+      }
+    } catch (err) {
+      console.log("err =>", err);
+    }
+  }
+  console.log("finished inserting 1:1s");
+};
+
 const removeNoneAttribute = () => {
   for (let i = 1; i < 3333; i += 1) {
     try {
@@ -41,77 +73,6 @@ const addCollectionsField = () => {
       name: "Hero NFT",
       family: "Original 10101 Unique Heros Collection",
     };
-
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));
-  }
-};
-
-const updateRoyalities = () => {
-  for (let i = 0; i < 10101; i += 1) {
-    const fileName = `${i}.json`;
-    const path = "build/images/";
-    const fullPath = path + fileName;
-    const data = JSON.parse(fs.readFileSync(fullPath));
-    const { properties } = data;
-
-    properties.creators = [
-      {
-        address: "F8XMcqXLAXGcyWmkbyPvWvEJmkcGddrPUohG9su8Pris",
-        share: 67,
-      },
-      {
-        address: "AoSrZ19EtzcN9YbuaKJdQvabH5YnD6iR8kSSHytdYGQ7",
-        share: 33,
-      },
-    ];
-
-    properties.terra_creators = [
-      {
-        address: "terra1kf4k0l7hj5tlkuzf67ly43q8d2gcxay3hwa7fr",
-        share: 67,
-      },
-      {
-        address: "terra1zxtczmxtw8mk8xncvr8lcq2qmvk4dz88ek6f79",
-        share: 33,
-      },
-    ];
-
-    properties.eth_creators = [
-      {
-        address: "0x46984CEb996aaCB585F63c81f15332860eFfa623",
-        share: 67,
-      },
-      {
-        address: "0x5a882Eb704EA153B117Ab2b1797bA46a1B09Da2c",
-        share: 33,
-      },
-    ];
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));
-  }
-};
-
-const updateMagicEdenRoyalities = () => {
-  for (let i = 0; i < 1000; i += 1) {
-    const fileName = `${i}.json`;
-    const path = "build/upload/";
-    const fullPath = path + fileName;
-    const data = JSON.parse(fs.readFileSync(fullPath));
-    const { properties } = data;
-
-    properties.creators = [
-      {
-        address: "F8XMcqXLAXGcyWmkbyPvWvEJmkcGddrPUohG9su8Pris",
-        share: 63.5,
-      },
-      {
-        address: "AoSrZ19EtzcN9YbuaKJdQvabH5YnD6iR8kSSHytdYGQ7",
-        share: 31.5,
-      },
-      {
-        address: "RRUMF9KYPcvNSmnicNMAFKx5wDYix3wjNa6bA7R6xqA",
-        share: 5,
-      },
-    ];
 
     fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));
   }
@@ -233,8 +194,9 @@ const checkDupes = async () => {
   }
 };
 
-moveFiles("Pre Gen Images/", "build/images/", "png");
-moveFiles("Pre Gen Metadata/", `${basePath}/build/json/`, "json");
+// moveFiles("Pre Gen Images/", "build/images/", "png");
+// moveFiles("Pre Gen Metadata/", `${basePath}/build/json/`, "json");
+insertOneToOnes();
 removeNoneAttribute();
 // addCollectionsField();
 // updateRoyalities();
