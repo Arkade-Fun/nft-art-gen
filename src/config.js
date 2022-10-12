@@ -26,7 +26,7 @@ const solanaMetadata = {
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 1680,
+    growEditionSizeTo: 1670,
     layersOrder: [
       { name: "Male Gender", options: { displayName: "Gender" } },
       { name: "Male Bot", options: { displayName: "Bot" } },
@@ -40,7 +40,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 3360,
+    growEditionSizeTo: 3333,
     layersOrder: [
       { name: "Female Gender", options: { displayName: "Gender" } },
       { name: "Female Bot", options: { displayName: "Bot" } },
