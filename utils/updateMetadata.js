@@ -7,7 +7,7 @@ const moveFiles = (oldPath, newPath) => {
     const oldFile = `${oldPath + i}.json`;
     const newFile = `${newPath + i}.json`;
 
-    fs.rename(oldFile, newFile, (err) => {
+    fs.copyFile(oldFile, newFile, (err) => {
       if (err) throw err;
     });
   }
