@@ -1,6 +1,6 @@
 const fs = require("fs");
 const basePath = process.cwd();
-const testFolder = `${basePath}/Pre Gen Metadata/`;
+const testFolder = `${basePath}/pre_gen/metadata/`;
 
 let data = [];
 

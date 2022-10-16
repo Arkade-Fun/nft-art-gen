@@ -25,13 +25,13 @@ const insertOneToOnes = () => {
         i--;
       } else {
         //insert image
-        let oldImg = `${"Pre Gen Images/" + i}.png`;
+        let oldImg = `${"pre_gen/images/" + i}.png`;
         let newImg = `${"build/images/" + rand}.png`;
         fs.copyFile(oldImg, newImg, (err) => {
           if (err) throw err;
         });
         //insert json
-        let oldFile = `${"Pre Gen Metadata/" + i}.json`;
+        let oldFile = `${"pre_gen/metadata/" + i}.json`;
         let newFile = `${`build/json/` + rand}.json`;
         fs.copyFile(oldFile, newFile, (err) => {
           if (err) throw err;
@@ -194,8 +194,8 @@ const checkDupes = async () => {
   }
 };
 
-// moveFiles("Pre Gen Images/", "build/images/", "png");
-// moveFiles("Pre Gen Metadata/", `${basePath}/build/json/`, "json");
+// moveFiles("pre_gen/images/", "build/images/", "png");
+// moveFiles("pre_gen/metadata/", `${basePath}/build/json/`, "json");
 insertOneToOnes();
 removeNoneAttribute();
 // addCollectionsField();
