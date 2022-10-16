@@ -70,8 +70,8 @@ const addCollectionsField = () => {
     const fullPath = path + fileName;
     const data = JSON.parse(fs.readFileSync(fullPath));
     data.collection = {
-      name: "Hero NFT",
-      family: "Original 10101 Unique Heros Collection",
+      name: "",
+      family: "",
     };
 
     fs.writeFileSync(fullPath, JSON.stringify(data, null, 4));

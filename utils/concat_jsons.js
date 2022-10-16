@@ -2,7 +2,7 @@ const basePath = process.cwd();
 
 const fs = require("fs");
 
-const testFolder = `${basePath}/komodos/`;
+const testFolder = `${basePath}/`;
 
 let data = [];
 const dir = testFolder;
