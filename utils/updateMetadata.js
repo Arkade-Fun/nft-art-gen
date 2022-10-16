@@ -13,7 +13,7 @@ const moveFiles = (oldPath, newPath, fileType) => {
   }
 };
 
-const insertOneToOnes = () => {
+const insertOneOfOnes = () => {
   const Map = {};
 
   for (let i = 1; i <= 62; i++) {
@@ -196,7 +196,7 @@ const checkDupes = async () => {
 
 // moveFiles("pre_gen/images/", "build/images/", "png");
 // moveFiles("pre_gen/metadata/", `${basePath}/build/json/`, "json");
-insertOneToOnes();
+insertOneOfOnes();
 removeNoneAttribute();
 // addCollectionsField();
 // updateRoyalities();
