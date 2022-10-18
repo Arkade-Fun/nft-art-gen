@@ -45,11 +45,14 @@ const insertOneOfOnes = () => {
   console.log("finished inserting 1:1s");
 };
 
-const removeNoneAttribute = () => {
-  for (let i = 1; i < 3333; i += 1) {
+const removeNoneAttribute = async () => {
+  const path = `${basePath}/build/json/`;
+  const fileDir = await fs.readdirSync(path);
+  const files = fileDir.splice(0, fileDir.length - 1);
+
+  for (let i = 1; i < files.length; i += 1) {
     try {
       const fileName = `${i}.json`;
-      const path = `${basePath}/build/json/`;
       const fullPath = path + fileName;
       const data = JSON.parse(fs.readFileSync(fullPath));
       const { attributes } = data;
@@ -163,7 +166,8 @@ const checkDupes = async () => {
   const HashList = {};
   const dir = `${basePath}/build/json/`;
   try {
-    const files = await fs.readdirSync(dir).splice(0, 3333);
+    const fileDir = await fs.readdirSync(dir);
+    const files = fileDir.splice(0, fileDir.length - 1);
     // files object contains all files names
     // log them on console
     files.forEach((file) => {
@@ -174,7 +178,7 @@ const checkDupes = async () => {
 
         let { attributes } = data;
         // console.log("attributes =>", data.edition, attributes.length);
-        attributes = attributes.sort((a, b) => a.trait_type - b.trait_type);
+        attributes = attributes?.sort((a, b) => a.trait_type - b.trait_type);
         attributes.forEach((attr) => {
           atrStr += attr.trait_type + attr.value;
         });
@@ -194,10 +198,6 @@ const checkDupes = async () => {
   }
 };
 
-// moveFiles("pre_gen/images/", "build/images/", "png");
-// moveFiles("pre_gen/metadata/", `${basePath}/build/json/`, "json");
-insertOneOfOnes();
-removeNoneAttribute();
 // addCollectionsField();
 // updateRoyalities();
 // updateMagicEdenRoyalities();
@@ -206,3 +206,5 @@ removeNoneAttribute();
 // rekeyUploadedJSON();
 // createCombinedMetadata();
 checkDupes();
+insertOneOfOnes();
+removeNoneAttribute();
