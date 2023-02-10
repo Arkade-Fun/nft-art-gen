@@ -72,6 +72,7 @@ const startCreating = async () => {
     return;
   }
   let loadedImageObjects = [];
+
   images.forEach((imgObject) => {
     loadedImageObjects.push(loadImgData(imgObject));
   });
