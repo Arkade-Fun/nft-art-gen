@@ -12,18 +12,16 @@ const namePrefix = "name";
 const description = "description";
 const baseUri = "";
 
-
-
 const layerConfigurations = [
   {
-    growEditionSizeTo: 1000,
+    growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
-      { name: "Items" },
-      { name: "Legs" },
-      { name: "Body" },
-      { name: "Hands" },
-      { name: "Head" },
+      { name: "Eyeball" },
+      { name: "Goo" },
+      { name: "Iris" },
+      { name: "Top lid" },
+      { name: "Bottom lid" },
     ],
   },
 ];

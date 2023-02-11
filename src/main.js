@@ -21,8 +21,10 @@ const {
   network,
   gif,
 } = require(`${basePath}/src/config.js`);
+
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
+
 ctx.imageSmoothingEnabled = format.smoothing;
 var metadataList = [];
 var attributesList = [];
