@@ -2,6 +2,8 @@ const fs = require("fs");
 const basePath = process.cwd();
 const sha1 = require(`${basePath}/node_modules/sha1`);
 
+const layerConfigurations = require("../src/config");
+
 const moveFiles = (oldPath, newPath, fileType) => {
   for (let i = 1; i <= 62; i += 1) {
     const oldFile = `${oldPath + i}.${fileType}`;
@@ -15,10 +17,21 @@ const moveFiles = (oldPath, newPath, fileType) => {
 
 const insertOneOfOnes = () => {
   const Map = {};
+  let dirname = "pre_gen/images/";
+  const numItems =
+    layerConfigurations[layerConfigurations.length - 1].growEditionSizeTo;
+  let numOneOfOnes;
+  fs.readdir(dirname, function (err, filenames) {
+    if (err) {
+      console.log("err =>", err);
+      return;
+    }
+    numOneOfOnes = filenames.length;
+  });
 
-  for (let i = 1; i <= 62; i++) {
+  for (let i = 1; i < numOneOfOnes; i++) {
     try {
-      let rand = Math.ceil(Math.random() * 3333);
+      let rand = Math.ceil(Math.random() * numItems);
       console.log("rand =>", rand);
       if (Map[rand]) {
         console.log("error: repeated 1:1", i);
@@ -103,7 +116,7 @@ const renumberFiles = () => {
 
 const prepareUploadFiles = () => {
   const index = 0;
-  const dest = "build/upload0/";
+  const dest = "build/upload/";
   const oldJsonPath = `${basePath}/build/json/`;
   const oldImgPath = "build/images/";
   const inc = 1000 * index;
