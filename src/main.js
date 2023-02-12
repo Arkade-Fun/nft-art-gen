@@ -21,6 +21,7 @@ const {
   network,
   gif,
 } = require(`${basePath}/src/config.js`);
+const { predeterminedGen } = require("./predeterminedGen");
 
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
@@ -330,6 +331,30 @@ const startCreating = async () => {
     const layers = layersSetup(
       layerConfigurations[layerConfigIndex].layersOrder
     );
+
+    async function createPredetermined() {
+      let index = 0;
+      // run until genDna returns null
+      while (true) {
+        const genDna = predeterminedGen(
+          layers,
+          DNA_DELIMITER,
+          layerConfigIndex,
+          index
+        );
+        console.log("genDna =>", genDna);
+        if (!genDna) return;
+        index++;
+        console.log("editionCount =>", editionCount);
+        try {
+          await createImage(genDna, layers);
+        } catch (err) {
+          console.log("Error creating predetermined images", err);
+        }
+      }
+    }
+    await createPredetermined();
+
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
